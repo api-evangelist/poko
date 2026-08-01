@@ -1,7 +1,30 @@
 aid: poko
+accessModel:
+  pricing: unknown
+  onboarding: unknown
+  trial: false
+  try_now: false
+  public: false
+  label: Unknown
+  confidence: low
+  source: []
+  generated: '2026-07-22'
+  method: derived
+image: https://kinlane-images.s3.amazonaws.com/shared/apis-json/icons/poko.png
 name: Poko
-description: Poko is a company surfaced as a portfolio company of 500-global and added to the API Evangelist
-  network as a stub for enrichment. This profile is a lead awaiting the enrichment pipeline.
+description: >-
+  Poko was a Singapore-based fintech that built a fiat-to-crypto on-ramp
+  aggregator for Web3 businesses — wallets, wallet-as-a-service providers,
+  marketplaces, dApps, and games. Its product connected 100+ local and
+  international payment methods with local KYC and smart routing so global
+  users could buy crypto or pay for NFTs with familiar local payment rails,
+  exposed to developers via SDKs (including a React Native SDK) and a Dashboard
+  API. Backed by 500 Global, ADB Ventures, Amasia, CE Innovation Capital, and
+  CreditEase, Poko was acquired by Web3Auth (Torus Labs) in October 2023 and its
+  on-ramp aggregator continues under the Web3Auth brand. The original Poko
+  developer surface is no longer operational: the pokoapp.xyz domain is now
+  parked/for sale and the docs.pokoapp.xyz documentation host has been
+  deprovisioned.
 url: https://raw.githubusercontent.com/api-evangelist/poko/refs/heads/main/apis.yml
 x-type: company
 x-source: vc-portfolio
@@ -9,11 +32,28 @@ x-backed-by:
 - 500-global
 x-tier: stub
 x-tier-reason: portfolio-lead
+x-status: acquired
+x-acquired-by: Web3Auth (Torus Labs)
+x-acquired-date: '2023-10-13'
+x-note: >-
+  Poko's own web/API surface is defunct as of enrichment (2026-07-20):
+  pokoapp.xyz redirects to a GoDaddy for-sale parking page and
+  docs.pokoapp.xyz / onramp.pokoapp.xyz no longer present a valid TLS
+  certificate (SNI unrecognized). The product lives on as the Web3Auth
+  On-Ramp Aggregator. No live OpenAPI, SDK packages, or well-known
+  documents were recoverable.
 specificationVersion: '0.20'
 created: '2026-07-17'
-modified: '2026-07-17'
+modified: '2026-07-20'
 tags:
 - Company
+- Fintech
+- Cryptocurrency
+- Web3
+- Payments
+- On-Ramp
+- KYC
+- Acquired
 apis: []
 maintainers:
 - FN: Kin Lane
@@ -21,5 +61,11 @@ maintainers:
 - FN: APIs.json
   email: info@apis.io
 common:
-- type: Website
-  url: https://shoppa.biz
+- type: Acquisition
+  name: Web3Auth acquires Poko On-Ramp Aggregator
+  url: https://blog.web3auth.io/announcing-web3auths-acquisition-of-poko-on-ramp-aggregator/
+x-enrichment:
+  date: '2026-07-20'
+  status: nochange
+  artifacts_added: 0
+  pass: local-v1
